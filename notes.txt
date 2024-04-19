@@ -1,4 +1,4 @@
-},
+}
   "dependencies": {
     "@auth0/nextjs-auth0": "^2.4.0",                  // for authentication and handling users
     "@fortawesome/fontawesome-svg-core": "^6.4.0",    // icons
@@ -8,3 +8,9 @@
     "sharp": "^0.32.0",                               // automatically optimizes images
     "uuid": "^9.0.0"                                  // generates random unique identifiers (especially for array)
   },
+
+}  File Based Routing
+chat.js => URL/chat
+[chat.js] => URL/chat/random-dynamic-generated-id ---> 404 on URL/chat
+[...chat.js] => URL/chat/random-dynamic-generated-id/random-dynamic-generated-id/random-dynamic-generated-id ---> 404 on URL/chat
+[[...chat.js]] => both works 

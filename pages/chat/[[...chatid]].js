@@ -6,7 +6,8 @@ export default function Home() {
       <Head>
         <title>J.A.R.V.I.S</title>
       </Head>
-      <h1>welcome to the league of draven</h1>
+      <h1>places to go, me to see</h1>
     </div>
   );
 }
+
