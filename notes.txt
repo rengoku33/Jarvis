@@ -1,0 +1,10 @@
+},
+  "dependencies": {
+    "@auth0/nextjs-auth0": "^2.4.0",                  // for authentication and handling users
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",    // icons
+    "mongodb": "^5.2.0",                              // DB
+    "openai-edge-stream": "^2.0.1",                   // stream back response from openai API (instead of waiting for one full response, we get chunks)
+    "react-markdown": "^8.0.7",                       // specifiy to the API that all responses should be returned as markdown, so response looks good when rendering
+    "sharp": "^0.32.0",                               // automatically optimizes images
+    "uuid": "^9.0.0"                                  // generates random unique identifiers (especially for array)
+  },
