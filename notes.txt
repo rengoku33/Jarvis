@@ -14,3 +14,5 @@ chat.js => URL/chat
 [chat.js] => URL/chat/random-dynamic-generated-id ---> 404 on URL/chat
 [...chat.js] => URL/chat/random-dynamic-generated-id/random-dynamic-generated-id/random-dynamic-generated-id ---> 404 on URL/chat
 [[...chat.js]] => both works 
+
+) mango 123 BetBUdzNX41P1H5A

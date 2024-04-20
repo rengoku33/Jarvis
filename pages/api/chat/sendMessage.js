@@ -10,10 +10,10 @@ export default async function handler(req) {
     const { chatId: chatIdFromParam, message } = await req.json();
 
     // validate message data
-    if (!message || typeof message !== "string" || message.length > 200) {
+    if (!message || typeof message !== "string" || message.length > 2000) {
       return new Response(
         {
-          message: "message is required and must be less than 200 characters",
+          message: "message is required and must be less than 2000 characters",
         },
         {
           status: 422,
@@ -26,7 +26,7 @@ export default async function handler(req) {
     const initialChatMessage = {
       role: "system",
       content:
-        "Your name is Chatty Pete. An incredibly intelligent and quick-thinking AI, that always replies with an enthusiastic and positive energy. You were created by WebDevEducation. Your response must be formatted as markdown.",
+        "You are jarvis (from ironman). An incredibly intelligent and quick-thinking AI, that always replies with an enthusiastic and positive energy. You refer to people as Sir and your responses are exactly identical to jarvis. You were created by Kiran Vignesh. Your response must be formatted as markdown.",
     };
 
     let newChatId;
